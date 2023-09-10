@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    background: #fff;
+    height: 80px;
+    justify-content: centre;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space_between;
+    align-items: center;
+    height: 40px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 100;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 40px;
+}
+
+.navbar__links {
+    color: #585858;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover {
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section CSS. */
+.main {
+    background-color:#fff;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.project__list {
+    list-style-type: none;
+}
+
+.main__link {
+    color: #0f0f0f;
+}
+
+.main__link:hover {
+    color: #4e9bff;
+    transition: all 0.3s ease;
+}
+
+p{
+    margin: 0 0 10px 0;
+}
