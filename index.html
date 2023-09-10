@@ -4,11 +4,50 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, intitial-scale=1">
 		<title> Tom Stopford </title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
-		<div id="menu">
-			<a href="./mathematical_resources.html">Mathematical Resources</a>
+		<!--Navigation bar-->
+		<div id="nav-placeholder">
+
 		</div>
-		This is my website. Hi!!!!
+		
+		<script>
+		$(function(){
+		  $("#nav-placeholder").load("nav.html");
+		});
+		</script>
+		<!--end of Navigation bar-->
+
+       <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Tom Stopford</h1>
+					<p>					
+					I am a curious individual with an interest in finding mathamatical and computational solutions
+					to real world problems.
+					</p>
+					<p>
+					I completed my integrated masters degree in 
+					<a class="main__link" href="https://warwick.ac.uk/study/undergraduate/courses/mathematicsmmath/">
+					mathematics</a> at the <a class="main__link" href="https://warwick.ac.uk/">University of Warwick</a> in July 2023. 
+					The areas in which I specialised were in mathematical analysis and fluid dynamics, my master's 
+					project focused on modelling effect thermal fluctuations in thin fluid films at the nanoscale.
+					</p>
+					<p>
+					I am passionate about learning and about education. Currently, I am searching for opportunities to
+					improve my problem solving, whether this be through improving my mathematical and 
+					programming abilites, or through other skills.
+					</p>
+
+                </div>
+            </div>
+       </div>
 	</body>
 </html>
