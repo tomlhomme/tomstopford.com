@@ -59,6 +59,7 @@
 }
 
 
+
 /* Hero Section CSS. */
 .main {
     background-color:#fff;
@@ -66,7 +67,7 @@
 
 .main__container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 0;
@@ -75,7 +76,7 @@
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 30vh min(100px,10vw);
 }
 
 .project__list {
@@ -102,4 +103,57 @@ p{
 
 .footer__container {
     text-align: center;
+}
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: 5px; /* size of the corner */
+  --color: #373B44;
+  width: 100%;
+  padding: calc(1.0em + var(--s)) calc(50px + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .1s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+  display: block;
+  margin-bottom: 10px;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration:none
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.btn_group {
+    align-items: center;
+    justify-self: center;
+    display: block;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h1 { 
+    font-weight: normal; 
 }
